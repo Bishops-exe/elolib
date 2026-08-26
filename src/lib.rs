@@ -27,20 +27,19 @@ pub struct PlayerList {
 }
 
 impl PlayerList {
+    #[inline]
     pub fn new(players: Vec<Player>) -> Self {
         Self { players }
     }
 
+    #[inline]
     pub fn single(player: Player) -> Self {
-        Self {
-            players: vec![player],
-        }
+        Self::new(vec![player])
     }
 
+    #[inline]
     pub fn with_capacity(size: usize) -> Self {
-        Self {
-            players: Vec::with_capacity(size),
-        }
+        Self::new(Vec::with_capacity(size))
     }
 
     pub fn average_elo(&self) -> u64 {
