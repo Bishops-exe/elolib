@@ -1,6 +1,8 @@
 [package]
 name = "elolib"
 version = "1.0.0"
+description = "A fast rust crate for elo-based matchmaking"
+license = "LGPL-3.0-or-later"
 edition = "2024"
 
 [lib]

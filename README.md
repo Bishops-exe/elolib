@@ -48,7 +48,6 @@ cargo test
 
 ## Benchmarks
 
-
 Benchmarks use [`criterion`] and simulate matchmaking over randomly generated parties:
 
 ```sh
@@ -57,3 +56,8 @@ cargo bench
 
 [`genawaiter`]: https://crates.io/crates/genawaiter
 [`criterion`]: https://crates.io/crates/criterion
+
+# License
+
+elolib is licensed under the [LGPLv3-or-higher](https://github.com/Bishops-exe/elolib/blob/main/LICENSE)
+license
