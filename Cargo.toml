@@ -1,0 +1,21 @@
+[package]
+name = "elolib"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["lib"]
+
+[dependencies]
+genawaiter = "0.99.1"
+
+[dev-dependencies]
+criterion = { version = "0.8.2", features = ["html_reports"] }
+rand = "0.10.2"
+
+[features]
+dealloc = []
+
+[[bench]]
+name = "bench"
+harness = false
